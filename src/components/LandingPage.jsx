@@ -58,26 +58,26 @@ export default function LandingPage({ onGetStarted }) {
   }, [])
 
   return (
-    <div className="relative min-h-screen bg-[#211E3F] overflow-hidden">
+    <div className="relative min-h-screen bg-[#0A0118] overflow-hidden">
       {/* Grid pattern background */}
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(rgba(184, 0, 255, 0.3) 2px, transparent 2px),
-                           linear-gradient(90deg, rgba(184, 0, 255, 0.3) 2px, transparent 2px)`,
+          backgroundImage: `linear-gradient(rgba(168, 85, 247, 0.2) 1px, transparent 1px),
+                           linear-gradient(90deg, rgba(168, 85, 247, 0.2) 1px, transparent 1px)`,
           backgroundSize: '80px 80px'
         }}></div>
       </div>
 
       {/* Gradient glow effects */}
       <div className="absolute inset-0 pointer-events-none">
-        {/* Top left glow */}
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#B800FF] rounded-full blur-[150px] opacity-20"></div>
+        {/* Top left glow - Purple */}
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#A855F7] rounded-full blur-[150px] opacity-25"></div>
         
-        {/* Center glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#9700D1] rounded-full blur-[200px] opacity-15"></div>
+        {/* Center glow - Deep Purple */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#7C3AED] rounded-full blur-[200px] opacity-20"></div>
         
-        {/* Bottom right glow */}
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#FFC107] rounded-full blur-[150px] opacity-10"></div>
+        {/* Bottom right glow - Yellow accent */}
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#FCD34D] rounded-full blur-[150px] opacity-15"></div>
       </div>
 
       {/* Animated top banner
@@ -93,7 +93,7 @@ export default function LandingPage({ onGetStarted }) {
       </div> */}
 
       {/* Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#211E3F]/90 backdrop-blur-md border-b border-[#B800FF]/20" role="navigation" aria-label="Main navigation">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1A1033]/90 backdrop-blur-md border-b border-[#A855F7]/20" role="navigation" aria-label="Main navigation">
         <div className="max-w-7xl mx-auto px-8 py-6">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -105,57 +105,57 @@ export default function LandingPage({ onGetStarted }) {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="text-2xl font-bold text-[#B800FF]">IDEATEX</span>
+              <span className="text-2xl font-bold text-[#A855F7]">IDEATEX</span>
             </div>
 
             {/* Navigation Links */}
             <div className="hidden md:flex items-center gap-8">
               <a 
                 href="#about" 
-                className="relative text-gray-300 hover:text-[#B800FF] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#B800FF] focus:ring-offset-2 focus:ring-offset-[#211E3F] rounded px-2 py-1"
+                className="relative text-gray-300 hover:text-[#A855F7] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#A855F7] focus:ring-offset-2 focus:ring-offset-[#1A1033] rounded px-2 py-1"
                 aria-label="Navigate to About section"
               >
                 About
-                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#B800FF] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(184,0,255,0.8)]"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#A855F7] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(168,85,247,0.8)]"></span>
               </a>
               <a 
                 href="#project" 
-                className="relative text-gray-300 hover:text-[#B800FF] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#B800FF] focus:ring-offset-2 focus:ring-offset-[#211E3F] rounded px-2 py-1"
+                className="relative text-gray-300 hover:text-[#A855F7] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#A855F7] focus:ring-offset-2 focus:ring-offset-[#1A1033] rounded px-2 py-1"
                 aria-label="Navigate to Project section"
               >
                 Project
-                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#B800FF] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(184,0,255,0.8)]"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#A855F7] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(168,85,247,0.8)]"></span>
               </a>
               <a 
                 href="#testimonial" 
-                className="relative text-gray-300 hover:text-[#B800FF] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#B800FF] focus:ring-offset-2 focus:ring-offset-[#211E3F] rounded px-2 py-1"
+                className="relative text-gray-300 hover:text-[#A855F7] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#A855F7] focus:ring-offset-2 focus:ring-offset-[#1A1033] rounded px-2 py-1"
                 aria-label="Navigate to Testimonial section"
               >
                 Testimonial
-                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#B800FF] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(184,0,255,0.8)]"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#A855F7] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(168,85,247,0.8)]"></span>
               </a>
               <a 
                 href="#team" 
-                className="relative text-gray-300 hover:text-[#B800FF] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#B800FF] focus:ring-offset-2 focus:ring-offset-[#211E3F] rounded px-2 py-1"
+                className="relative text-gray-300 hover:text-[#A855F7] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#A855F7] focus:ring-offset-2 focus:ring-offset-[#1A1033] rounded px-2 py-1"
                 aria-label="Navigate to Team section"
               >
                 Team
-                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#B800FF] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(184,0,255,0.8)]"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#A855F7] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(168,85,247,0.8)]"></span>
               </a>
               <a 
                 href="#blog" 
-                className="relative text-gray-300 hover:text-[#B800FF] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#B800FF] focus:ring-offset-2 focus:ring-offset-[#211E3F] rounded px-2 py-1"
+                className="relative text-gray-300 hover:text-[#A855F7] transition-all duration-300 font-medium group focus:outline-none focus:ring-2 focus:ring-[#A855F7] focus:ring-offset-2 focus:ring-offset-[#1A1033] rounded px-2 py-1"
                 aria-label="Navigate to Blog section"
               >
                 Blog
-                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#B800FF] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(184,0,255,0.8)]"></span>
+                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#A855F7] group-hover:w-full transition-all duration-300 shadow-[0_0_8px_rgba(168,85,247,0.8)]"></span>
               </a>
             </div>
 
             {/* Register Button - Floating Pill Style */}
             <Button 
               onClick={onGetStarted}
-              className="bg-[#B800FF]/70 hover:bg-[#B800FF] hover:shadow-[0_0_20px_rgba(184,0,255,0.6)] text-white font-bold px-8 py-2.5 rounded-full transition-all duration-300 flex items-center gap-2 border border-[#B800FF]/40 focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:ring-offset-2 focus:ring-offset-[#211E3F]"
+              className="bg-[#A855F7] hover:bg-[#9333EA] hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] text-white font-bold px-8 py-2.5 rounded-full transition-all duration-300 flex items-center gap-2 border border-[#A855F7]/40 focus:outline-none focus:ring-2 focus:ring-[#FCD34D] focus:ring-offset-2 focus:ring-offset-[#1A1033]"
               aria-label="Register for IdeateX Summit 2025"
             >
               Register Now
@@ -171,9 +171,9 @@ export default function LandingPage({ onGetStarted }) {
           {/* Left side - Main content */}
           <div className="space-y-10 px-4 md:px-8">
             {/* Badge */}
-            <div className="inline-flex items-center gap-3 border-2 border-[#B800FF] rounded-full px-6 py-3 backdrop-blur-sm" role="status" aria-live="polite">
-              <div className="w-2 h-2 bg-[#B800FF] rounded-full animate-pulse" aria-hidden="true"></div>
-              <span className="text-[#B800FF] font-semibold">IdeateX Summit 2025</span>
+            <div className="inline-flex items-center gap-3 border-2 border-[#A855F7] rounded-full px-6 py-3 backdrop-blur-sm" role="status" aria-live="polite">
+              <div className="w-2 h-2 bg-[#A855F7] rounded-full animate-pulse" aria-hidden="true"></div>
+              <span className="text-[#A855F7] font-semibold">IdeateX Summit 2025</span>
             </div>
 
             {/* Main heading with responsive scaling */}
@@ -182,7 +182,7 @@ export default function LandingPage({ onGetStarted }) {
                 IdeateX
               </h1>
               <div className="flex items-center gap-3 sm:gap-4">
-                <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#B800FF]/90" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>2</span>
+                <span className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-[#A855F7]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>2</span>
                 {/* IdeateX Logo */}
                 <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 relative">
                   <img 
@@ -215,7 +215,7 @@ export default function LandingPage({ onGetStarted }) {
             <div className="pt-8 pb-12 flex justify-center md:justify-start">
               <Button 
                 onClick={onGetStarted}
-                className="group relative bg-white/85 text-[#211E3F] hover:bg-[#FFC107] hover:text-[#211E3F] font-bold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-none border-4 border-[#B800FF]/60 shadow-[4px_4px_0px_0px_rgba(184,0,255,0.5)] hover:shadow-[6px_6px_0px_0px_rgba(184,0,255,0.7)] transition-all focus:outline-none focus:ring-2 focus:ring-[#FFC107] focus:ring-offset-2 focus:ring-offset-[#211E3F]"
+                className="group relative bg-white/85 text-[#1A1033] hover:bg-[#FCD34D] hover:text-[#1A1033] font-bold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-none border-4 border-[#A855F7]/60 shadow-[4px_4px_0px_0px_rgba(168,85,247,0.5)] hover:shadow-[6px_6px_0px_0px_rgba(168,85,247,0.7)] transition-all focus:outline-none focus:ring-2 focus:ring-[#FCD34D] focus:ring-offset-2 focus:ring-offset-[#1A1033]"
                 aria-label="Register for IdeateX Summit 2025"
                 style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
               >
@@ -229,13 +229,13 @@ export default function LandingPage({ onGetStarted }) {
 
           {/* Right side - Decorative card (hidden on mobile) */}
           <div className="relative hidden md:flex items-center justify-center">
-            <div className="relative bg-[#B800FF]/90 rounded-3xl p-10 transform rotate-2 hover:rotate-0 transition-transform duration-300 border-4 border-[#9700D1]/80 shadow-[8px_8px_0px_0px_rgba(151,0,209,0.6)] max-w-sm" role="complementary" aria-label="Event highlights">
-              <div className="absolute -top-6 -right-6 w-16 h-16 bg-linear-to-br from-[#FFC107]/90 to-[#FFD54F]/90 rounded-full flex items-center justify-center border-4 border-[#9700D1]/80" aria-hidden="true">
+            <div className="relative bg-[#A855F7]/90 rounded-3xl p-10 transform rotate-2 hover:rotate-0 transition-transform duration-300 border-4 border-[#7C3AED]/80 shadow-[8px_8px_0px_0px_rgba(124,58,237,0.6)] max-w-sm" role="complementary" aria-label="Event highlights">
+              <div className="absolute -top-6 -right-6 w-16 h-16 bg-linear-to-br from-[#FCD34D]/90 to-[#FDE68A]/90 rounded-full flex items-center justify-center border-4 border-[#7C3AED]/80" aria-hidden="true">
                 <span className="text-3xl">⚡</span>
               </div>
               <div className="space-y-5 text-center">
                 <h2 className="text-3xl font-bold text-white" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>Innovation</h2>
-                <div className="inline-block bg-[#211E3F] text-[#FFC107] px-5 py-2.5 rounded-xl font-bold text-xl border-2 border-[#FFC107]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                <div className="inline-block bg-[#1A1033] text-[#FCD34D] px-5 py-2.5 rounded-xl font-bold text-xl border-2 border-[#FCD34D]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
                   IdeateX.
                 </div>
                 <h3 className="text-3xl font-bold text-white" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>Pitching.</h3>
@@ -261,7 +261,7 @@ export default function LandingPage({ onGetStarted }) {
         </div> */}
 
         {/* Marquee above timer - Full Width */}
-        <div className="absolute left-0 right-0 mb-8 bg-linear-to-r from-[#B800FF]/80 via-[#9700D1]/60 to-[#B800FF]/80 py-4 overflow-hidden transform -skew-y-2 -mx-8 md:-mx-16">
+        <div className="absolute left-0 right-0 mb-8 bg-linear-to-r from-[#A855F7]/80 via-[#7C3AED]/60 to-[#A855F7]/80 py-4 overflow-hidden transform -skew-y-2 -mx-8 md:-mx-16">
           <div className="flex items-center animate-scroll-left whitespace-nowrap">
             <span className="inline-flex items-center text-white font-bold text-lg px-8">
               IdeateX Summit 2025 <span className="mx-3">💡</span> Nov 28, 2025 <span className="mx-3">💡</span> IdeateX Summit 2025 <span className="mx-3">💡</span> Nov 28, 2025 <span className="mx-3">💡</span> IdeateX Summit 2025 <span className="mx-3">💡</span> Nov 28, 2025 <span className="mx-3">💡</span>
@@ -279,7 +279,7 @@ export default function LandingPage({ onGetStarted }) {
             {/* Header */}
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-3 mb-2">
-                <div className="h-px w-12 bg-linear-to-r from-transparent to-[#B800FF]" aria-hidden="true"></div>
+                <div className="h-px w-12 bg-linear-to-r from-transparent to-[#A855F7]" aria-hidden="true"></div>
               </div>
               <p className="text-gray-300 text-sm font-medium" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
                 Join us for IdeateX Summit • November 28, 2025
@@ -290,44 +290,44 @@ export default function LandingPage({ onGetStarted }) {
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4" role="timer" aria-live="polite" aria-atomic="true" aria-label={`Time until IdeateX Summit: ${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes, ${timeLeft.seconds} seconds`}>
               {/* Days */}
               <div className="group text-center">
-                <div className="relative bg-linear-to-br from-[#B800FF]/40 to-[#9700D1]/40 border-2 border-[#B800FF]/60 rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mb-3 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] transform transition-all hover:scale-105 hover:border-[#B800FF]">
-                  <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#B800FF]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                <div className="relative bg-linear-to-br from-[#A855F7]/40 to-[#7C3AED]/40 border-2 border-[#A855F7]/60 rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mb-3 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] transform transition-all hover:scale-105 hover:border-[#A855F7]">
+                  <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#A855F7]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
                     {String(timeLeft.days).padStart(2, '0')}
                   </div>
                 </div>
                 <div className="text-gray-300 text-xs font-bold tracking-widest uppercase" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>Days</div>
               </div>
               
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#B800FF]/50 mb-8" aria-hidden="true">:</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#A855F7]/50 mb-8" aria-hidden="true">:</div>
               
               {/* Hours */}
               <div className="group text-center">
-                <div className="relative bg-linear-to-br from-[#B800FF]/40 to-[#9700D1]/40 border-2 border-[#B800FF]/60 rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mb-3 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] transform transition-all hover:scale-105 hover:border-[#B800FF]">
-                  <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#B800FF]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                <div className="relative bg-linear-to-br from-[#A855F7]/40 to-[#7C3AED]/40 border-2 border-[#A855F7]/60 rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mb-3 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] transform transition-all hover:scale-105 hover:border-[#A855F7]">
+                  <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#A855F7]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
                     {String(timeLeft.hours).padStart(2, '0')}
                   </div>
                 </div>
                 <div className="text-gray-300 text-xs font-bold tracking-widest uppercase" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>Hours</div>
               </div>
               
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FFC107]/50 mb-8" aria-hidden="true">:</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FCD34D]/50 mb-8" aria-hidden="true">:</div>
               
               {/* Minutes */}
               <div className="group text-center">
-                <div className="relative bg-linear-to-br from-[#FFC107]/40 to-[#FFD54F]/40 border-2 border-[#FFC107]/60 rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mb-3 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] transform transition-all hover:scale-105 hover:border-[#FFC107]">
-                  <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFC107]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                <div className="relative bg-linear-to-br from-[#FCD34D]/40 to-[#FDE68A]/40 border-2 border-[#FCD34D]/60 rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mb-3 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] transform transition-all hover:scale-105 hover:border-[#FCD34D]">
+                  <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FCD34D]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
                     {String(timeLeft.minutes).padStart(2, '0')}
                   </div>
                 </div>
                 <div className="text-gray-300 text-xs font-bold tracking-widest uppercase" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>Minutes</div>
               </div>
               
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FFC107]/50 mb-8" aria-hidden="true">:</div>
+              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#FCD34D]/50 mb-8" aria-hidden="true">:</div>
               
               {/* Seconds */}
               <div className="group text-center">
-                <div className="relative bg-linear-to-br from-[#FFC107]/40 to-[#FFD54F]/40 border-2 border-[#FFC107]/60 rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mb-3 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] transform transition-all hover:scale-105 hover:border-[#FFC107]">
-                  <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FFC107]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
+                <div className="relative bg-linear-to-br from-[#FCD34D]/40 to-[#FDE68A]/40 border-2 border-[#FCD34D]/60 rounded-2xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 mb-3 min-w-[80px] sm:min-w-[100px] md:min-w-[120px] transform transition-all hover:scale-105 hover:border-[#FCD34D]">
+                  <div className="relative text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#FCD34D]" style={{ fontFamily: 'Inter, system-ui, sans-serif' }}>
                     {String(timeLeft.seconds).padStart(2, '0')}
                   </div>
                 </div>

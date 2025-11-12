@@ -30,18 +30,18 @@ export default function TeamDetailsPage({ teamData, onBackToHome, onRemoveMember
   }
 
   return (
-    <div className="relative bg-black overflow-hidden min-h-screen">
+    <div className="relative bg-[#0A0118] overflow-hidden min-h-screen">
       {/* Grid pattern background */}
-      <div className="absolute inset-0 opacity-30">
+      <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(rgba(168, 85, 247, 0.3) 2px, transparent 2px),
-                           linear-gradient(90deg, rgba(168, 85, 247, 0.3) 2px, transparent 2px)`,
+          backgroundImage: `linear-gradient(rgba(168, 85, 247, 0.2) 1px, transparent 1px),
+                           linear-gradient(90deg, rgba(168, 85, 247, 0.2) 1px, transparent 1px)`,
           backgroundSize: '80px 80px'
         }}></div>
       </div>
 
       {/* Gradient glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-purple-900/30 via-purple-950/10 to-transparent pointer-events-none"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,var(--tw-gradient-stops))] from-[#A855F7]/25 via-[#7C3AED]/10 to-transparent pointer-events-none"></div>
       
       {/* Navigation Bar */}
       <Navbar onBackToHome={onBackToHome} buttonText="Back to Home" />
